@@ -13,7 +13,7 @@ target/
 .springBeans
 .sts4-cache
 
-
+resources
 application.properties
 pom.xml
 
