@@ -22,10 +22,11 @@ import lombok.RequiredArgsConstructor;
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
-       private final GithubOAuth2UserService githubOAuth2UserService;
+     private final GithubOAuth2UserService githubOAuth2UserService;
 
         @Value("${app.frontend.url}")
         private String frontendUrl;
+        
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
